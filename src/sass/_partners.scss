@@ -1,0 +1,22 @@
+.partners {
+    padding: 228px 0 0 40px;
+    display: grid;
+    grid-template: 12px auto / minmax(auto, 1160px);
+    row-gap: 50px;
+    &__title {
+        font-family: 'DM Mono';
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #8DFD1B;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, 30px) / repeat(3, 322px);
+        row-gap: 60px;
+        column-gap: 85px;
+    }
+}

@@ -1,0 +1,26 @@
+@import 'bootstrap-reboot.min';
+@import 'fonts';
+@import 'mixins'; 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1 , h2 {
+    margin: 0;
+}
+
+@import 'header';
+@import 'promo';
+@import 'collection';  
+@import 'artists'; 
+@import 'story'; 
+@import 'roadmap'; 
+@import 'partners';
+@import 'questions'; 
+@import 'team'; 
+@import 'join'; 
+@import 'footer';

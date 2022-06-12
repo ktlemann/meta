@@ -1,0 +1,53 @@
+.artists {
+    padding: 120px 0 0 0;
+    &__titles {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    &__title {
+        font-family: 'Audiowide';
+        font-weight: 400;
+        font-size: 79px;
+        line-height: 88px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        animation: move 5s infinite linear;
+        white-space: nowrap;
+        &:after {
+            content: "Artists";
+            margin: 0 400px;
+        }
+    }
+    &__wrapper {
+        margin-top: 130px;
+        padding: 0 40px;
+        display: grid;
+        grid-template: repeat(2, 310px) / repeat(4, 245px);
+        gap: 60px;
+    }
+    &__item {
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        margin-top: 20px;
+        font-family: 'DM Mono';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

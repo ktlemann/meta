@@ -1,0 +1,93 @@
+.story {
+    padding: 200px 240px 0 40px;
+    &__title {
+        font-family: 'Audiowide';
+        font-weight: 400;
+        font-size: 37px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        span {
+            color: #A8A8A8;
+        }
+    }
+    &__main {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    &__tabs {
+        margin-bottom: 0;
+        list-style-type: none;
+
+        display: grid;
+        grid-template: repeat(3, 70px) / 280px;
+        grid-auto-rows: 70px;
+    }
+    &__tab {
+        padding: 25px 0 31px 28px;
+        font-family: 'DM Mono';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF;
+        cursor: pointer;
+        &_active {
+            color: #8DFD1B;
+            background-color: #222;
+        }
+        &:hover {
+            color: #8DFD1B;
+        }
+    }
+    &__content {
+        padding: 60px;
+        background-color: #222;
+    }
+    &__wrapper {
+        display: none;
+        &_active {
+            display: block;
+            display: grid;
+            grid-template: auto / 170px 545px;
+            column-gap: 40px;
+            background-color: #222;
+            div {
+                background-color: #222;
+            }
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 253px;
+        object-fit: cover;
+    }
+    &__subtitle {
+        height: 95px;
+        margin-bottom: 28px;
+        position: relative;
+        margin-left: 24px;
+        font-family: 'DM Mono';
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        color: #8DFD1B;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: translateX(-24px);
+            width: 2px;
+            height: 93px;
+            background: #8DFD1B;
+        }
+    }
+    &__descr {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}
