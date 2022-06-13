@@ -155,80 +155,206 @@
         height: 130px;
         border-radius: 10px;
     }
-
     &__circle1 {
-        @include circle1;
-        &_second {
-            &:before {
-                top: 57%;
-                left: 71%;
-            }
-        }
-        &_third {
-            &:before {
-                top: calc(93% - 10px);
-                left: 23%;
-            }
-        }
+        background: url('../img/circle.png') center (center / cover) no-repeat;
+        width: 672px;
+        height: 672px;
+        position: absolute;
+        top: 13%;
+        left: 4%;
+        z-index: 0;
     }
     &__circle2 {
-        @include circle2;
-        &_second {
-            &:before {
-                top: calc(56% - 10px);
-                left: 69%;
-            }
-        }
-        &_third {
-            &:before {
-                top: 91%;
-                left: 21%;
-            }
-        }
+        background: url('../img/circle.png') center (center / cover) no-repeat;
+        width: 672px;
+        height: 672px;
+        position: absolute;
+        top: 41%;
+        left: 52%;
+        z-index: 0;
     }
     &__circle3 {
-        @include circle3;
-        &_second {
-            &:before {
-                top: calc(54% - 15px);
-                left: 66%;
-            }
+        background: url('../img/circle.png') center (center / cover) no-repeat;
+        width: 672px;
+        height: 672px;
+        position: absolute;
+        top: 78%;
+        left: 4%;
+        z-index: 0;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .roadmap {
+        &__title {
+            margin-top: 100px;
+            font-size: 30px;
         }
-        &_third {
-            &:before {
-                top: calc(89% - 10px);
-                left: calc(18% - 5px);
-            }
+        &__content {
+            margin-top: 0;
+        }
+        &__circle1 {
+            width: 450px;
+            height: 450px;
+        }
+        &__circle2 {
+            width: 450px;
+            height: 450px;
+
+        }
+        &__circle3 {
+            width: 450px;
+            height: 450px;
         }
     }
-    &__circle4 {
-        @include circle4;
-        &_second {
-            &:before {
-                top: 49%;
-                left: 61%;
-            }
+}
+
+@media (max-width: 991.50px) {
+    .roadmap {
+        padding: 90px 0 0 0;
+        &__bg {
+            height: 180px;
         }
-        &_third {
-            &:before {
-                top: calc(85% - 10px);
-                left: calc(13% - 5px);
-            }
+        &__title {
+            margin-top: 60px;
+            font-size: 27px;
+        }
+        &__circle1 {
+            width: 350px;
+            height: 350px;
+            top: 20%;
+        }
+        &__circle2 {
+            width: 350px;
+            height: 350px;
+            top: 45%;
+
+        }
+        &__circle3 {
+            width: 350px;
+            height: 350px;
+            top: 72%;
         }
     }
-    &__circle5 {
-        @include circle5;
-        &_second {
-            &:before {
-                top: 42%;
-                left: 53%;
+}
+
+@media (max-width: 767.50px) {
+    .roadmap {
+        padding: 70px 0 0 0;
+        &__bg {
+            height: 140px;
+        }
+        &__title {
+            margin-top: 40px;
+            font-size: 24px;
+        }
+        &__circle1 {
+            width: 250px;
+            height: 250px;
+            top: 11%;
+        }
+        &__circle2 {
+            width: 250px;
+            height: 250px;
+            top: 36%;
+        }
+        &__circle3 {
+            width: 250px;
+            height: 250px;
+            top: 70%;
+        }
+    }
+}
+
+@media (max-width: 575.50px) {
+    .roadmap {
+        padding: 40px 0 0 0;
+        &__bg {
+            height: 80px;
+        }
+        &__title {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        &__content {
+            margin-top: 30px;
+            padding: 0 0;
+        }
+        &__wrapper {
+            margin-top: 100px;
+            grid-template: 50px minmax(100px, auto) / 290px;
+            &:nth-child(1) {
+                margin-top: 10px;
+            }
+            &:after {
+                height: 20px;
             }
         }
-        &_third {
+        &__wrap-part {
+            padding: 5px 0;
+        }
+        &__wrap-part2 {
+            padding: 20px 8px;
+        }
+        &__phase {
+            margin-top: 3px;
+            margin-left: 40px;
+            font-size: 6px;
+        }
+        &__subtitle {
+            margin-left: 40px;
+            font-size: 14px;
             &:before {
-                top: calc(78% - 10px);
-                left: calc(5% - 5px);
+                width: 30px;
+                height: 30px;
+                padding: 2px 9px 5px;
+                font-size: 19px;
+                transform: translateX(-36px) translateY(-11px);
             }
+        }
+        &__descr {
+            margin-right: 35px;
+            width: 220px;
+        }
+        &__descr1 {
+            margin-left: 5px;
+            font-size: 8px;
+            line-height: 25px;
+        }
+        &__descr2 {
+            margin-top: 5px;
+            font-size: 8px;
+            line-height: 21px;
+            a {
+                font-size: 8px;
+                line-height: 21px;
+            }
+        }
+        &__descr3 {
+            margin-top: 5px;
+            font-size: 8px;
+            line-height: 21px;
+        }
+        &__img {
+            width: 70px;
+            height: 70px;
+        }
+        &__circle1 {
+            width: 220px;
+            height: 220px;
+            top: 7%;
+        }
+        &__circle2 {
+            width: 220px;
+            height: 220px;
+            top: 36%;
+            left: 32%;
+        }
+        &__circle3 {
+            width: 220px;
+            height: 220px;
         }
     }
 }

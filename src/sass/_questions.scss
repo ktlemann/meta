@@ -14,7 +14,7 @@
         font-size: 38px;
         line-height: 45px;
         text-transform: uppercase;
-        text-align-last: left;
+        text-align: left;
         color: #FFFFFF;
         span {
             color: #A8A8A8;
@@ -82,6 +82,64 @@
             &:before {
                 background-color: #8DFD1B;
             }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .questions {
+        padding: 150px 20px 0;
+        align-items: center;
+        &__title {
+            font-size: 30px;
+        }
+        &__img {
+            width: 300px;
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 991.50px) {
+    .questions {
+        padding: 100px 0 0;
+        flex-direction: column;
+        &__main {
+            min-height: 170px;
+        }
+        &__title {
+            font-size: 27px;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 767.50px) {
+    .questions {
+        padding: 80px 0 0;
+        &__title {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 575.50px) {
+    .questions {
+        padding: 60px 0 0;
+        &__title {
+            font-size: 20px;
+        }
+        &__content {
+            width: 300px;
+        }
+        &__question {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 10px;
         }
     }
 }

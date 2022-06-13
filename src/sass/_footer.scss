@@ -67,3 +67,111 @@
         }
     }
 }
+
+
+
+@media (max-width: 1200px) {
+    .footer {
+        padding: 70px 80px;
+        grid-template: 140px / 160px minmax(300px, max-content) 350px;
+        &__descr {
+            margin-top: 50px;
+            font-size: 10px;
+            line-height: 18px;
+        }
+        &__links {
+            margin-left: 50px;
+            grid-template: repeat(6, 20px) / minmax(70px, max-content) minmax(70px, max-content);
+            row-gap: 20px;
+            column-gap: 70px;
+        }
+        &__link {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+@media (max-width: 991.50px) {
+    .footer {
+        padding: 50px 60px;
+        grid-template: 100px / 100px minmax(270px, max-content) 300px;
+        &__descr {
+            margin-top: 30px;
+            font-size: 8px;
+            line-height: 16px;
+        }
+        &__links {
+            margin-left: 30px;
+            grid-template: repeat(6, 15px) / minmax(50px, max-content) minmax(50px, max-content);
+            row-gap: 15px;
+            column-gap: 60px;
+        }
+        &__link {
+            font-size: 10px;
+            line-height: 13px;
+        }
+        &__social {
+            grid-template: 30px / repeat(4, 30px);
+            grid-auto-columns: 30px;
+            column-gap: 10px;
+        }
+        &__social-item {
+            padding: 8px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 767.50px) {
+    .footer {
+        padding: 20px 15px;
+        grid-template: 100px / 90px minmax(250px, max-content) 200px;
+        &__descr {
+            margin-top: 30px;
+            font-size: 8px;
+            line-height: 16px;
+        }
+        &__links {
+            margin-left: 30px;
+            grid-template: repeat(6, 15px) / minmax(50px, max-content) minmax(50px, max-content);
+            row-gap: 15px;
+            column-gap: 30px;
+        }
+        &__link {
+            font-size: 10px;
+            line-height: 13px;
+        }
+        &__social {
+            grid-template: 20px / repeat(4, 20px);
+            grid-auto-columns: 20px;
+            column-gap: 10px;
+        }
+        &__social-item {
+            padding: 6px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (max-width: 575.50px) {
+    .footer {
+        padding: 20px 10px;
+        grid-template: 80px / auto;
+        &__main {
+            display: none;
+        }
+        &__links {
+            margin-left: 0;
+            grid-template: repeat(6, 15px) / minmax(50px, max-content) minmax(50px, max-content);
+            row-gap: 15px;
+            column-gap: 30px;
+            justify-content: center;
+        }
+        &__social {
+            display: none;
+        }
+    }
+}

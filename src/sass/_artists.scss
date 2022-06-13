@@ -51,3 +51,58 @@
         transform: translateX(-50%);
     }
 }
+
+
+@media (max-width: 1200px) {
+    .artists {
+        padding: 100px 0 0 0;
+        &__title {
+            font-size: 65px;
+        }
+        &__wrapper {
+            margin-top: 100px;
+            padding: 0 35px;
+            grid-template: repeat(2, 310px) / repeat(3, 245px);
+            gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 991.50px) {
+    .artists {
+        padding: 70px 0 0 0;
+        &__title {
+            font-size: 58px;
+        }
+        &__wrapper {
+            margin-top: 80px;
+            padding: 0 0;
+            grid-template: repeat(2, 310px) / repeat(2, 245px);
+            gap: 40px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 767.50px) {
+    .artists {
+        padding: 50px 0 0 0;
+        &__title {
+            font-size: 53px;
+        }
+    }
+}
+
+@media (max-width: 575.50px) {
+    .artists {
+        &__title {
+            font-size: 42px;
+        }
+        &__wrapper {
+            margin-top: 60px;
+            grid-template: repeat(2, 310px) / repeat(1, 245px);
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+}
